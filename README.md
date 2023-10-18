@@ -18,7 +18,7 @@ Com base no vídeo de lançamento do iPhone conforme link abaixo, elabore em uma
 
 ###### Comportamentos esperados:
 
-* Repodutor Musicial: tocar, pausar, selecionarMusica
+* Reprodutor Musicial: tocar, pausar, selecionarMusica
 * Aparelho Telefônico: ligar, atender, iniciarCorrerioVoz
 * Navegador na Internet: exibirPagina, adicionarNovaAba, atualizarPagina
 

@@ -14,50 +14,56 @@ public class IPhone implements AparelhoTelefonico, ReprodutorMusical, NavegadorI
 
     @Override
     public void ligar() {
-        System.out.println("Ligando...");
+        System.out.println("Aparelho Telefônico: Ligar");
     }
 
     @Override
     public void atender() {
-        System.out.println("Atendendo...");
+        System.out.println("Aparelho Telefônico: Atender");
     }
 
     @Override
     public void iniciarCorreioVoz() {
-        System.out.println("Iniciando correio de voz...");
+        System.out.println("Aparelho Telefônico: Iniciar correio de voz");
     }
 
     @Override
-    public void exibirPagina() {
-        System.out.println("Exibindo página...");
+    public void exibirPagina(String url) {
+        System.out.println("Navegador na Internet: Exibir página");
     }
 
     @Override
     public void adicionarNovaAba() {
-        System.out.println("Nova aba criada");
+        System.out.println("Navegador na Internet: Adicionar nova aba");
     }
 
     @Override
     public void atualizarPagina() {
-        System.out.println("Atualizando página...");
+        System.out.println("Navegador na Internet: Atualizar Página");
     }
 
     @Override
     public void tocar() {
-        System.out.println("Reproduzindo...");
+        System.out.println("Reprodutor Musical: Tocar");
     }
 
     @Override
     public void pausar() {
-        System.out.println("Pausando...");
+        System.out.println("Reprodutor Musical: Pausar");
     }
 
     @Override
     public void selecionarMusica(Musica musica) {
-        System.out.println("Musica selecionada: " + musica);
+        System.out.println("Reprodutor Musical: Selecionar música - nome = '" + musica.getNome() + "', Artista = '" + musica.getArtista() + "'");
     }
 
     public float getVersao() {
         return versao;
     }
+
+    @Override
+    public String toString() {
+        return "Reprodutor Musical: \nTocar, Pausar, SelecionarMusica\nAparelho Telefônico: \nLigar, Atender, Iniciar correio de voz\nNavegador na Internet: \nExibir página, Adicionar nova aba, Atualizar página";
+    }
 }
+
